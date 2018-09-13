@@ -1,0 +1,9 @@
+{
+  "description": "Display crypto currency price in Gnome Shell", 
+  "name": "AIQ Crypto Ticker", 
+  "shell-version": [
+    "3.26.2"
+  ], 
+  "url": "", 
+  "version": 1
+}
