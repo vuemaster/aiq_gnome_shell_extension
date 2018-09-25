@@ -13,15 +13,26 @@ const BASE_URL_BINANCE = 'https://api.binance.com/api/v1/ticker/24hr';
 const BASE_URL_FREIEX = 'https://freiexchange.com/api/public/'
 const BASE_TRADEVIEW_URL_FREIEX = 'https://freiexchange.com/market/'
 const BASE_TRADEVIEW_URL_BINANCE = 'https://www.binance.com/tradeDetail.html?symbol='
+const BASE_URL_BITPANDA = 'https://api.bitpanda.com/v1/ticker'
+const BASE_TRADEVIEW_URL_BITPANDA = 'https://cointicker.online/'
 const symbols = [
     {
         symbol: 'AIQ/BTC',
         tradeSymbol: 'AIQ',
         name: 'AIQ',
         decimals: 8,
-        removeZero: true,
+        removeZero:true,
         url: BASE_URL_FREIEX,
         url_trade: BASE_TRADEVIEW_URL_FREIEX,
+    },
+    {
+        symbol: 'PAN',
+        tradeSymbol: 'PAN',
+        name: 'PAN',
+        decimals: 4,
+        removeZero: false,
+        url: BASE_URL_BITPANDA,
+        url_trade: BASE_TRADEVIEW_URL_BITPANDA,
     },
     {
         symbol: 'TNBBTC',
